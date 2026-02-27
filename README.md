@@ -1,28 +1,20 @@
-Objetivo do projeto:
+# FIDC Checklist MVP
 
-O projeto tem como objetivo desenvolver um MVP (Minimum Viable Product) para modelagem e simulação da subordinação e provisão para devedores duvidosos (PDD) em um Fundo de Investimento em Direitos Creditórios (FIDC), utilizando Python e bibliotecas de análise de dados como Pandas, NumPy e ferramentas de visualização.
+MVP para automatizar a extração de informações públicas (XML do FNET/CVM) e gerar um checklist básico de alerta para FIDCs.
 
-Estudos realizados para o projeto educacional:
+## O que este MVP faz
+- Lê 1 arquivo XML do informe (mensal/trimestral)
+- Extrai tabelas (quando identificadas)
+- Calcula KPIs básicos (ex.: vencidos vs a vencer, concentração em >180 dias)
+- Gera um Excel com:
+  - KPIs
+  - Checklist (OK/ALERTA)
+  - Tabelas extraídas
 
-  -Estruturação financeira de FIDCs
-  
-   -Dinâmica de subordinação (cota sênior, mezanino e subordinada)
-  
-   -Impacto contábil e econômico da PDD
-  
-   -Efeito vagão (contaminação por devedor)
-  
-   -Indicadores de risco (inadimplência, PDD%)
-
-Proposta:
-
-  *Sair do nível conceitual e construir uma ferramenta funcional que permita:
-
-      -Simular diferentes cenários de inadimplência
-
-      -Avaliar impacto na subordinação
-
-      -Testar gatilhos contratuais
-
-      -Medir deterioração de carteira ao longo do tempo
-  
+## Como rodar
+1) Criar ambiente e instalar dependências:
+```bash
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+pip install -r requirements.txt
