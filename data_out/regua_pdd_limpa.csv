@@ -1,0 +1,10 @@
+﻿regua_de_pdd_(exemplo_—_ajuste_conforme_regulamento_do_fundo),unnamed:_1
+,
+Dias_início (>=),PDD%
+0,0
+1,0.1
+31,0.3
+61,0.5
+91,0.7
+181,1
+"Nota: A fórmula usa VLOOKUP aproximado pela coluna Dias_início, então mantenha ordenado crescente.",

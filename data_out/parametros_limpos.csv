@@ -1,0 +1,10 @@
+﻿parametros_(inputs),unnamed:_1
+,
+Corte de inadimplência (dias) p/ indicador,90
+Corte de efeito vagão (dias) p/ gatilho por devedor,90
+Usar efeito vagão? (SIM/NÃO),NÃO
+Cota Sênior (R$),1000000
+Subordinação mínima (gatilho) %,0.15
+Escopo vagão (TODOS/VINCENDOS) [opcional],VINCENDOS
+(MVP: vagão desligado por padrão),
+Observação: ajuste só se quiser simular outra estrutura. O MVP funciona com estes defaults.,
